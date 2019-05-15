@@ -115,4 +115,13 @@
 
     </LinearLayout>
 
+    <ListView
+        android:layout_width="352dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#56B6271F"
+        android:fontFamily="@font/hanna"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
 </LinearLayout>
