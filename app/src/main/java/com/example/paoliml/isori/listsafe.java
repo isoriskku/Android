@@ -14,7 +14,7 @@ public class listsafe extends AppCompatActivity {
         but2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(listsafe.this, MainActivity.class);
+                Intent toy = new Intent(listsafe.this, parentwind.class);
                 startActivity(toy);
             }
         });

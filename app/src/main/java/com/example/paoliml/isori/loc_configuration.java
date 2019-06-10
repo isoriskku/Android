@@ -17,7 +17,7 @@ public class loc_configuration extends AppCompatActivity {
         but1_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(loc_configuration.this, MainActivity.class);
+                Intent toy = new Intent(loc_configuration.this, parentwind.class);
                 startActivity(toy);
             }
         });
@@ -26,8 +26,6 @@ public class loc_configuration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loc_configuration);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         init1();
 

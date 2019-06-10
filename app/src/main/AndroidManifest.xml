@@ -2,17 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.paoliml.isori">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".listsafe"></activity>
+        <activity android:name=".getqr"></activity>
+        <activity android:name=".parentwind" />
+        <activity android:name=".childwind" />
+        <activity android:name=".listsafe" />
+        <activity android:name=".showloc" />
         <activity
             android:name=".loc_configuration"
-            android:label="@string/title_activity_loc_configuration"
+            android:label="loc_configuration"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>

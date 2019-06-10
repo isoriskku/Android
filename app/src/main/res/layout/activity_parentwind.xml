@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="16dp"
+    tools:context=".parentwind">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/newgreen"
+        android:fontFamily="@font/hanna"
+        android:text="안전구역 List"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+
+
+    <Button
+        android:id="@+id/butt3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/aquamarine"
+        android:fontFamily="@font/hanna"
+        android:text="목록"
+        android:textColor="@color/darkblue" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="안전구역 설정하기:"
+        android:fontFamily="@font/hanna"
+        android:textColor="@color/graynavy"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/loc_conf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/aquamarine"
+        android:fontFamily="@font/hanna"
+        android:text="안전구역 설정"
+        android:textColor="@color/darkblue"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:background="@color/red"
+        android:id="@+id/textView"
+        android:fontFamily="@font/hanna"
+        android:text="위험소리"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+    <ListView
+        android:layout_width="352dp"
+        android:layout_height="204dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#73C44D58"
+        android:fontFamily="@font/hanna"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button10"
+        android:text="뒤로가기"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/aquamarine"
+        android:fontFamily="@font/hanna"
+        android:textColor="@color/darkblue"/>
+
+</LinearLayout>
