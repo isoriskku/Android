@@ -82,7 +82,24 @@
         android:textSize="30sp"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <ListView
+        android:id="@+id/danger"
         android:layout_width="352dp"
         android:layout_height="204dp"
         android:layout_marginLeft="20dp"

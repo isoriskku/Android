@@ -19,7 +19,7 @@ public class loc_configuration extends AppCompatActivity implements OnMapReadyCa
     private MapView mMapView;
     private GoogleMap googleMap;
     private static final String MAPVIEW_BUNDLE_KEY = "MapViewBundleKey";
-    public Button but1_1;
+    public Button but1_1,but1_2;
     public void init1(){
         but1_1=(Button)findViewById(R.id.button5);
         but1_1.setOnClickListener(new View.OnClickListener() {
@@ -41,9 +41,19 @@ public class loc_configuration extends AppCompatActivity implements OnMapReadyCa
         mMapView = (MapView) findViewById(R.id.mapView);
         mMapView.onCreate(mapViewBundle);
         mMapView.getMapAsync(this);
-
+        but1_2=(Button)findViewById(R.id.button4);
+        but1_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                init2_1();
+            }
+        });
         init1();
 
+    }
+    public void init2_1(){
+        Intent intent=new Intent(this,parentwind.class);
+        startActivity(intent);
     }
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -78,7 +88,7 @@ public class loc_configuration extends AppCompatActivity implements OnMapReadyCa
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        map.addMarker(new MarkerOptions().position(new LatLng(37.276296, 127.023293)).title("Marker"));
     }
 
     @Override

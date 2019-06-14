@@ -117,7 +117,8 @@ public class getqr extends AppCompatActivity implements OnMapReadyCallback{
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+
+        map.addMarker(new MarkerOptions().position(new LatLng(37.276296, 127.023293)).title("Marker"));
     }
 
     @Override
